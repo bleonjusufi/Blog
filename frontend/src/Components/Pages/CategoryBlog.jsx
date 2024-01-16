@@ -14,6 +14,7 @@ const CategoryBlog = () => {
       case "sports-car":
         return [
           {
+            id: 1,
             title: "The Fast and Furious World of Sports Cars",
             content:
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...",
@@ -23,6 +24,7 @@ const CategoryBlog = () => {
       case "luxury-sedan":
         return [
           {
+            id: 2,
             title: "The Elegance of Luxury Sedans: A Detailed Review",
             content:
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...",
@@ -32,6 +34,7 @@ const CategoryBlog = () => {
       case "suv":
         return [
           {
+            id: 3,
             title: "Exploring Off-Road Adventures with SUVs",
             content:
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...",
@@ -41,6 +44,7 @@ const CategoryBlog = () => {
       case "hatchback":
         return [
           {
+            id: 4,
             title: "City Commuting: The Hatchback Advantage",
             content:
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...",
@@ -48,6 +52,7 @@ const CategoryBlog = () => {
         ];
 
       default:
+        console.error("Invalid category:", category);
         return [];
     }
   };
@@ -65,8 +70,8 @@ const CategoryBlog = () => {
           Blogs
         </h2>
         <div className="blog-grid">
-          {blogs.map((blog, index) => (
-            <div key={index} className="blog-item">
+          {blogs.map((blog) => (
+            <div key={blog.id} className="blog-item">
               <h3>{blog.title}</h3>
               <p>{blog.content}</p>
             </div>
