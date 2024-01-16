@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Header from "./Header";
 import "../CSS/Home.css";
 import Maybach from "../Images/Maybach.webp";
@@ -39,7 +40,7 @@ function Home() {
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit...
                 </p>
-                <a href="/article1">Read more</a>
+                <Link to="/article/article1">Read more</Link>
               </div>
             </div>
             <div className="article">
@@ -49,7 +50,7 @@ function Home() {
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit...
                 </p>
-                <a href="/article2">Read more</a>
+                <Link to="/article/article2">Read more</Link>
               </div>
             </div>
             <div className="article">
@@ -59,39 +60,39 @@ function Home() {
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit...
                 </p>
-                <a href="/article3">Read more</a>
+                <Link to="/article/article3">Read more</Link>
               </div>
             </div>
           </div>
           <div className="article-grid">
             <div className="article">
-              <img src={BMW} alt="Article 1" />
+              <img src={BMW} alt="Article 4" />
               <div className="article-info">
                 <h3>M4 CSL is the ultimate driving machine</h3>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit...
                 </p>
-                <a href="/article1">Read more</a>
+                <Link to="/article/article4">Read more</Link>
               </div>
             </div>
             <div className="article">
-              <img src={Lambo} alt="Article 2" />
+              <img src={Lambo} alt="Article 5" />
               <div className="article-info">
                 <h3>Veneno at Geneva auto showroom</h3>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit...
                 </p>
-                <a href="/article2">Read more</a>
+                <Link to="/article/article5">Read more</Link>
               </div>
             </div>
             <div className="article">
-              <img src={Porsche} alt="Article 3" />
+              <img src={Porsche} alt="Article 6" />
               <div className="article-info">
                 <h3>German Engineering at its best</h3>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit...
                 </p>
-                <a href="/article3">Read more</a>
+                <Link to="/article/article6">Read more</Link>
               </div>
             </div>
           </div>

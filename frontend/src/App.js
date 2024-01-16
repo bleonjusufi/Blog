@@ -8,6 +8,7 @@ import Reviews from "./Components/Pages/Reviews";
 import Signup from "./Components/Pages/Signup";
 import Login from "./Components/Pages/Login";
 import CategoryBlog from "./Components/Pages/CategoryBlog";
+import Article from "./Components/Pages/Article";
 
 function App() {
   return (
@@ -24,6 +25,8 @@ function App() {
         <Route path="/category/luxury-sedan" element={<CategoryBlog />} />
         <Route path="/category/suv" element={<CategoryBlog />} />
         <Route path="/category/hatchback" element={<CategoryBlog />} />
+        <Route path="/article/:articleId" element={<Article />} />
+        <Route path="*" element={<div>Page not found</div>} />
       </Routes>
     </Router>
   );

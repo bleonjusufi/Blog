@@ -27,7 +27,9 @@ const Header = () => {
       </nav>
 
       <div className="search-bar">
-        <button type="button">Join Us</button>
+        <button type="button">
+          <a href="/signup">Join Us</a>
+        </button>
       </div>
     </header>
   );
