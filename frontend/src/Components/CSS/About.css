@@ -1,0 +1,47 @@
+/* AboutUsPage.css */
+
+.about-us-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.about-us-content {
+  text-align: justify;
+}
+
+.about-us__title {
+  color: black;
+}
+.about-text {
+  color: black;
+}
+
+.about-p {
+  color: #666;
+  line-height: 1.6;
+}
+
+.team-members {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.team-member {
+  text-align: center;
+}
+
+.team-member img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.team-member p {
+  font-weight: bold;
+}
+
+/* You can add more styles as needed */
