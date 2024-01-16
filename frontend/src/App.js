@@ -7,6 +7,7 @@ import About from "./Components/Pages/About";
 import Reviews from "./Components/Pages/Reviews";
 import Signup from "./Components/Pages/Signup";
 import Login from "./Components/Pages/Login";
+import CategoryBlog from "./Components/Pages/CategoryBlog";
 
 function App() {
   return (
@@ -19,6 +20,10 @@ function App() {
         <Route path="/reviews" element={<Reviews />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/category/sports-car" element={<CategoryBlog />} />
+        <Route path="/category/luxury-sedan" element={<CategoryBlog />} />
+        <Route path="/category/suv" element={<CategoryBlog />} />
+        <Route path="/category/hatchback" element={<CategoryBlog />} />
       </Routes>
     </Router>
   );

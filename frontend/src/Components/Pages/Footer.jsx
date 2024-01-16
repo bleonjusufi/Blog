@@ -1,4 +1,12 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebook,
+  faInstagram,
+  faLinkedin,
+  faTwitter,
+} from "@fortawesome/free-brands-svg-icons";
+
 import "../CSS/Footer.css";
 
 const Footer = () => {
@@ -32,7 +40,20 @@ const Footer = () => {
         <div className="footer-section">
           <h3>Follow Us</h3>
           <p>Stay connected on social media:</p>
-          {/* Add social media icons or links as needed */}
+          <div className="social-icons">
+            <a href="https://www.facebook.com">
+              <FontAwesomeIcon icon={faFacebook} />
+            </a>
+            <a href="https://www.instagram.com">
+              <FontAwesomeIcon icon={faInstagram} />
+            </a>
+            <a href="https://www.linkedin.com">
+              <FontAwesomeIcon icon={faLinkedin} />
+            </a>
+            <a href="https://www.twitter.com">
+              <FontAwesomeIcon icon={faTwitter} />
+            </a>
+          </div>
         </div>
       </div>
 
