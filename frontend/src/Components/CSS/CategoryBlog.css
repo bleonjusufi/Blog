@@ -5,7 +5,17 @@
   margin: 0 auto;
   padding: 20px;
 }
-
+.category-blog__title {
+  color: black;
+}
+.search {
+  color: #333;
+  width: 90%;
+  margin-right: 31px;
+}
+.not-found {
+  color: red;
+}
 .blog-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));

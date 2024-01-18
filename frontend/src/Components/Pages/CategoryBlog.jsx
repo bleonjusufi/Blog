@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 import { useParams } from "react-router-dom";
@@ -54,6 +54,8 @@ import Chevrolet from "../Images/Chevrolet.jpg";
 
 const CategoryBlog = () => {
   const { category } = useParams();
+  const [searchInput, setSearchInput] = useState("");
+  const [searchResult, setSearchResult] = useState([]);
 
   console.log("Current category:", category);
 
@@ -465,27 +467,61 @@ const CategoryBlog = () => {
     }
   };
 
-  const blogs = fetchBlogContent();
+  const handleSearch = () => {
+    const filteredBlogs = blogs.filter(
+      (blog) =>
+        blog.title.toLowerCase().includes(searchInput.toLowerCase()) ||
+        blog.content.toLowerCase().includes(searchInput.toLowerCase())
+    );
+    setSearchResult(filteredBlogs);
+  };
 
+  const blogs = fetchBlogContent();
   console.log("Fetched blogs:", blogs);
 
   return (
     <>
       <Header />
       <section className="category-blog">
-        <h2>
+        <h2 className="category-blog__title">
           {category && category.charAt(0).toUpperCase() + category.slice(1)}{" "}
           Blogs
         </h2>
+        <div>
+          <input
+            type="text"
+            placeholder="Search..."
+            className="search"
+            value={searchInput}
+            onChange={(e) => setSearchInput(e.target.value)}
+          />
+          <button onClick={handleSearch}>Search</button>
+        </div>
         <div className="blog-grid">
-          {blogs.map((blog) => (
-            <div key={blog.id} className="blog-item">
-              <img src={blog.image} alt={blog.title} />
-              <h3>{blog.title}</h3>
-              <p>{blog.content}</p>
-              <a href={blog.readMoreLink}>Read More</a>
-            </div>
-          ))}
+          {searchInput === "" ? (
+            // Display all blogs when search input is empty
+            blogs.map((blog) => (
+              <div key={blog.id} className="blog-item">
+                <img src={blog.image} alt={blog.title} />
+                <h3>{blog.title}</h3>
+                <p>{blog.content}</p>
+                <a href={blog.readMoreLink}>Read More</a>
+              </div>
+            ))
+          ) : searchResult.length > 0 ? (
+            // Display filtered blogs when search input is not empty and results are found
+            searchResult.map((blog) => (
+              <div key={blog.id} className="blog-item">
+                <img src={blog.image} alt={blog.title} />
+                <h3>{blog.title}</h3>
+                <p>{blog.content}</p>
+                <a href={blog.readMoreLink}>Read More</a>
+              </div>
+            ))
+          ) : (
+            // Display no results found message when search input is not empty and no results are found
+            <p className="not-found">No results found</p>
+          )}
         </div>
       </section>
       <Footer />
