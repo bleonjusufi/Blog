@@ -1,0 +1,50 @@
+/* Article.css (You can create a separate CSS file for this) */
+
+.article {
+  width: 100%;
+  height: 400px; /* Set the desired fixed height */
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.article img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(70%); /* Adjust brightness of the image */
+}
+
+.article .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Align text to the bottom of the overlay */
+  padding: 20px;
+  box-sizing: border-box;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+
+.article .overlay h3 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.article-content {
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.article-content p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
+}

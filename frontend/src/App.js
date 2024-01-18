@@ -21,10 +21,7 @@ function App() {
         <Route path="/reviews" element={<Reviews />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/category/sports-car" element={<CategoryBlog />} />
-        <Route path="/category/luxury-sedan" element={<CategoryBlog />} />
-        <Route path="/category/suv" element={<CategoryBlog />} />
-        <Route path="/category/hatchback" element={<CategoryBlog />} />
+        <Route path="/category/:category" element={<CategoryBlog />} />
         <Route path="/article/:articleId" element={<Article />} />
         <Route path="*" element={<div>Page not found</div>} />
       </Routes>

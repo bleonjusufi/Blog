@@ -38,7 +38,8 @@ function Home() {
               <div className="article-info">
                 <h3>Explore the new Maybach S680</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+                  The Mercedes-Maybach S680 exemplifies luxury and
+                  sophistication...
                 </p>
                 <Link to="/article/article1">Read more</Link>
               </div>
@@ -48,7 +49,8 @@ function Home() {
               <div className="article-info">
                 <h3>Tesla CyberTruck is finally here</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+                  The Tesla Cybertruck has arrived, breaking conventional norms
+                  with its...
                 </p>
                 <Link to="/article/article2">Read more</Link>
               </div>
@@ -58,7 +60,8 @@ function Home() {
               <div className="article-info">
                 <h3>Ferrari SF90 The Italian Masterpiece</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+                  The Ferrari SF90, an Italian masterpiece, epitomizes the
+                  pinnacle of auto...
                 </p>
                 <Link to="/article/article3">Read more</Link>
               </div>
@@ -70,7 +73,8 @@ function Home() {
               <div className="article-info">
                 <h3>M4 CSL is the ultimate driving machine</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+                  The M4 CSL is unequivocally the epitome of the "Ultimate
+                  Driving Machine." ...
                 </p>
                 <Link to="/article/article4">Read more</Link>
               </div>
@@ -80,7 +84,7 @@ function Home() {
               <div className="article-info">
                 <h3>Veneno at Geneva auto showroom</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+                  The Lamborghini Veneno made an electrifying presence at the...
                 </p>
                 <Link to="/article/article5">Read more</Link>
               </div>
@@ -90,7 +94,7 @@ function Home() {
               <div className="article-info">
                 <h3>German Engineering at its best</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+                  The Porsche 992 GT3 exemplifies German engineering at its...
                 </p>
                 <Link to="/article/article6">Read more</Link>
               </div>
