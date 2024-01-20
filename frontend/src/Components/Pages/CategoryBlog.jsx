@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Outlet } from "react-router-dom";
 import Header from "./Header";
 import Footer from "./Footer";
 import { useParams } from "react-router-dom";
@@ -505,17 +506,16 @@ const CategoryBlog = () => {
                 <img src={blog.image} alt={blog.title} />
                 <h3>{blog.title}</h3>
                 <p>{blog.content}</p>
-                <a href={blog.readMoreLink}>Read More</a>
+                <a href={`/category/${category}/${blog.id}`}>Read More</a>{" "}
               </div>
             ))
           ) : searchResult.length > 0 ? (
-            // Display filtered blogs when search input is not empty and results are found
             searchResult.map((blog) => (
               <div key={blog.id} className="blog-item">
                 <img src={blog.image} alt={blog.title} />
                 <h3>{blog.title}</h3>
                 <p>{blog.content}</p>
-                <a href={blog.readMoreLink}>Read More</a>
+                <a href={`/category/${category}/${blog.id}`}>Read More</a>{" "}
               </div>
             ))
           ) : (
@@ -524,6 +524,7 @@ const CategoryBlog = () => {
           )}
         </div>
       </section>
+      <Outlet />
       <Footer />
     </>
   );

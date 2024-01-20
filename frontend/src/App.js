@@ -9,6 +9,7 @@ import Signup from "./Components/Pages/Signup";
 import Login from "./Components/Pages/Login";
 import CategoryBlog from "./Components/Pages/CategoryBlog";
 import Article from "./Components/Pages/Article";
+import DetailedBlog from "./Components/Pages/DetailedBlog";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/category/:category" element={<CategoryBlog />} />
         <Route path="/article/:articleId" element={<Article />} />
+        <Route path="/category/:category/:blogId" element={<DetailedBlog />} />
         <Route path="*" element={<div>Page not found</div>} />
       </Routes>
     </Router>
