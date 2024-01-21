@@ -27,11 +27,7 @@ function Home() {
       </section>
       <section className="home-grid">
         <div className="featured-content">
-          <h2>Welcome to the Car Blog</h2>
-          <p>
-            Explore the latest articles, reviews, and updates about your
-            favorite cars.
-          </p>
+          <h2 className="featured-content__title">Articles</h2>
           <div className="article-grid">
             <div className="article">
               <img src={Maybach} alt="Article 1" />

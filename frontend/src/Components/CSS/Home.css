@@ -18,10 +18,10 @@
   margin: 0 auto;
   text-align: center;
 }
-
-.featured-content h2 {
+.featured-content__title {
   font-size: 2.5rem;
-  margin-bottom: 10px;
+  color: black;
+  text-align: center;
 }
 
 .featured-content p {
