@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Header from "./Header";
 import "../CSS/Home.css";
-import Maybach from "../Images/Maybach.webp";
+import Maybach from "../Images/s680.webp";
 import Tesla from "../Images/Tesla.webp";
 import Ferrari from "../Images/ferrari.jpg";
 import BMW from "../Images/BMW.jpg";
